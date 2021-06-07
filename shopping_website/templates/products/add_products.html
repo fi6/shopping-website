@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{% block title %}Add products{% endblock %}
+{% block content %}
+    <form action="/success" method='POST' enctype='multipart/form-data'>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control" type="file" id="formFile" name='file' required>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+
+{% endblock %}
